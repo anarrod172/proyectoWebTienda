@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="InicioSesion.css">
+</head>
+<body>
+    <form method="post" action="Inicio.html" name= "login" class="centro" onsubmit="return validarInicioSesion()">
+    <fieldset>
+        <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" size="50" required/>
+        <br>
+        <br>
+        <label for="contraseña">Clave</label>
+            <input type="password" name="clave" id="contraseña" size="20" required/>
+        <br>
+        <br>
+        <button id ="button" type="submit">Identificarse</button>
+        <p>He olvidado la contraseña</p>
+    </fieldset>
+    </form>
+</body>
+<script type="text/javascript" src="LoggeoFormulario.js"></script>
+</html>

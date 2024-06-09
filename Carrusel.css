@@ -1,0 +1,60 @@
+/* Estilo básico para el Slider*/
+#Carrusel {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+ }
+ #CarruselPequeño {
+     width: 300px;
+     margin: auto;
+     background-color: rgba(240, 248, 255, 0.27);
+     padding: 80px;
+     border-radius: 20px;
+     overflow: hidden;
+  }
+ 
+ .gallery-container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease-in-out;
+ }
+ 
+ .gallery-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+ }
+ .gallery-small-item {
+    min-width: 300px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 100px;
+ }
+ 
+ .gallery-item img, .gallery-small-item img {
+    width: 100%;
+    display: block;
+ }
+ 
+ /* Navegación del Slider */
+ .gallery-navigation {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0px;
+ }
+ 
+ .nav-button {
+    background-color: #4ccccc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+ }
+ 
+ .nav-button:hover {
+ background-color: #005f5f;
+ }

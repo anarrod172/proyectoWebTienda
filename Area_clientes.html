@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de clientes</title>
+    <link rel="stylesheet" href="AreaCliente.css">
+    <link rel="stylesheet" href="Esquema.css">
+    <link rel="stylesheet" href="Carrusel.css">
+    <script type="text/javascript" src="MenuDesplegable.js"></script>
+    <script type="text/javascript" src="NavegacionHamburguesa.js"></script>
+    <script type="text/javascript" src="Carrusel.js"></script>
+    <script type="text/javascript" src="SmoothScrolling.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id = "cabecera">
+        <img src="Imagenes/Logorosa.png" alt="Retro Era Vintage Clothes" height="150" width="230" id="headerImg"/>
+        <p>Viaja al pasado vistiendo vintage.</p>
+    </header>
+    <nav>
+        <ul id="MenuUl1">
+            <li class="MenuItem"><a class="MenuEnlace" href="Inicio.html" target="_self">Home</a></li>
+            <li class="MenuItem"><a class="MenuEnlace" href="Sobre_nosotros.html" target="_self">Sobre nosotros</a></li>
+        </ul>
+        <ul id="MenuUl2">
+            <li class="MenuItem" onclick="cambia(this)"><span class="MenuEnlace">Área cliente</span></li>
+            <ul id="SubMenuSmall" style="display: none">
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaMujer" href="Area_clientes.html">Ropa de Mujer</a></li>
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaHombre" href="Area_clientes.html">Ropa de Hombre</a></li>
+            </ul>
+            <li class="MenuItem"><a class="MenuEnlace" href="Inicio_sesion.html" target="_self">Inicio sesión</a></li>
+            <li class="MenuItem"><a class="MenuEnlace" href="Contacto.html" target="_self">Contacto</a></li>
+        </ul> 
+    </nav>
+    <nav id="menuHamburguesa" style="display: none">
+        <ul id="contenedorDesplegable1">
+            <li class="MenuRelleno"></li>
+            <li class="MenuRelleno"></li>   
+        </ul>
+        <ul id="contenedorDesplegable2">
+            <ul class="SubMenu" style="display: inline-block">
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaMujer" href="javascript:clickedRopaMujer()">Ropa de Mujer</a></li>
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaHombre" href="Area_clientes.html">Ropa de Hombre</a></li>
+            </ul>
+            <li class="MenuRelleno"></li>
+            <li class="MenuRelleno"></li>
+        </ul> 
+    </nav>
+    <main>
+    <section>
+        <article id="ropaMujer">
+            <h3 class="titulo">Ropa de <span> Mujer</span></h3>
+            <div class="packs">
+                <div class="pack">
+                    <img src="Imagenes/Chaqueta azul.jpg" height="250" width="350">
+                    <h3>Chaqueta azul estamapada - S</h3>
+                    <p>35,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/mono-ski-colmar-.jpg" height="250" width="350">
+                    <h3>Mono Ski Colmar</h3>
+                    <p>135,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/Abrigo.webp" height="250" width="350">
+                    <h3>Abrigo Militar - M</h3>
+                    <p>95,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/PetoVaquero.webp" height="250" width="350">
+                    <h3>Peto Vaquero Largo Mustang- XL</h3>
+                    <p>35,95€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/Vestido Dolly.jpg" height="250" width="350">
+                    <h3>Mini Vestido Vintage Dolly - S</h3>
+                    <p>24,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/MiniFalda.jpg" height="250" width="350">
+                    <h3>Mini Falda Piel Negra - M</h3>
+                    <p>95,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/Bermudas.jpg" height="250" width="350">
+                    <h3>Bermudas 90´S Vichy- XL</h3>
+                    <p>24,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/Falda 80s.jpg" height="250" width="350">
+                    <h3>Flada de los 80´S- M</h3>
+                    <p>25,90€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/Chaqueta 80.jpg" height="250" width="350">
+                    <h3>Chaqueta 80´S Cuero- L</h3>
+                    <p>80,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+            </div>
+        </article>
+        <article  id="ropaHombre">
+            <h3 class="titulo">Ropa de <span> Hombre</span></h3>
+            <div class="packs">
+                <div class="pack">
+                    <img src="Imagenes/Jersey.jpg" height="250" width="350">
+                    <h3>Jersey Tontino - L</h3>
+                    <p>15,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/Sudadera Fila.jpg" height="250" width="350">
+                    <h3>Sudadera 1/4 Zip Fila XXL</h3>
+                    <p>18,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/mono-moto-by-hein-gericke-prosports-.jpg" height="250" width="350">
+                    <h3>Mono Moto By Hein Gericke - XL</h3>
+                    <p>315,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/Polo.jpg" height="250" width="350">
+                    <h3>Polo Chaps Verde Menta - M</h3>
+                    <p>30,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/Dickies.jpg" height="250" width="350">
+                    <h3>Dickies jorts- S</h3>
+                    <p>44,90€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/PantalonChandal.jpg" height="250" width="350">
+                    <h3>Pantalón killtec - L</h3>
+                    <p>12,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/Jersey Negro.jpg" height="250" width="350">
+                    <h3>Jersey Unisex Oversize Blanco y Negro - XL</h3>
+                    <p>24,90€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/abrigo-vintage-prezza.jpg" height="250" width="350">
+                    <h3>Abrigo Vintage Prezza - M</h3>
+                    <p>55,00€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+                <div class="pack">
+                    <img src="Imagenes/Levisjpg.jpg" height="250" width="350">
+                    <h3>Vaqueros Levi´s 501 - L</h3>
+                    <p>39,90€</p>
+                    <button class="button" type="submit" value="Comprar">Comprar</button>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <h3 class="titulo">Nuestros <span>Clientes</span></h3>
+        <section id="CarruselPequeño">
+            <div class="gallery-container">
+                <figure class="gallery-small-item">
+                    <img src="Imagenes//Chica noventa.jpg" alt="Imagen 1">
+                </figure>
+                <figure class="gallery-small-item">
+                    <img src="Imagenes/chica_vintage_mercadillo2.jpg" alt="Imagen 2">
+                </figure>
+                <figure class="gallery-small-item">
+                    <img src="Imagenes/Chico retro.jpg" alt="Imagen 3">
+                </figure>
+                <figure class="gallery-small-item">
+                    <img src="Imagenes/StreetStyle.jpg" alt="Imagen 4">
+                </figure>
+                <figure class="gallery-small-item">
+                    <img src="Imagenes/shirimina_vintage.jpg" alt="Imagen 5">
+                </figure>
+            </div>
+            <nav class="gallery-navigation">
+                <button class="nav-button" id= "prev-button">Anterior</button>
+                <button class="nav-button" id= "next-button">Siguiente</button>
+            </nav>
+        </section>
+    </section>
+    <section id="scrollUp">
+        <a href="#cabecera"><img id="flecha" src="Imagenes/flecha-hacia-arriba.png"></a>
+    </section>
+    <section id="MenuSecundario">
+        <div>
+            <article>
+                <p class="Subrayado">Horario</p>
+                <ul>
+                    <li><p>Lunes-Viernes</p>
+                        <ul>
+                            <li>Mañanas: 09:00-13:30</li>
+                            <li>Tardes: 17:00-20:00</li>
+                        </ul>
+                    </li>
+                    <li><p>Sábados</p>
+                        <ul>
+                            <li>Mañanas: 09:00-14:00</li>
+                        </ul>
+                    </li>
+                    <li><p>Domingos</p>
+                        <ul>
+                            <li>Cerrado todo el día</li>
+                        </ul>
+                    </li>
+                </ul>   
+            </article>
+            <article>
+                <p class="Subrayado">Ubicación</p>
+                <p>C/Laraña, 12, Sevilla, Andalucía, España</p>
+                <p>Teléfono de contacto: 955472113-657449328</p>
+                <a class="submenu" href="mailto:retroEra@gmail.com?Bcc=correocopiagmail.com&subject=Desarrollo%20Entorno%20Cliente&body=Estoy%20interesado%20en...">retroEra@gmail.com</a>
+            </article>
+        </div>
+        <div>
+        <article>
+            <p class="Subrayado">Área Cliente</p>
+            <a class="submenu" href="Area_clientes.html" target="_self">Ropa de Mujer</a>
+            <br>
+            <a class="submenu" href="Area_clientes.html" target="_self">Ropa de Hombre</a>
+        </article>
+        <article>
+            <p class="Subrayado">Páginas de interés</p>
+            <a class="submenu" href="https://fitinivintage.com/blog/moda-al-gusto-del-planeta-b11.html" target="_blank">Moda al gusto del planeta</a>
+            <br>
+            <a class="submenu" href="https://fitinivintage.com/blog/segunda-mano-vs-vintage-son-lo-mismo-b10.html" target="_blank">¿Es lo mismo la ropa de segunda mano que la vintage?</a>
+            <br>
+            <a class="submenu" href="https://vintagewholesalespain.com/blogs/vintagewholesalespain-blog/la-ropa-vintage" target="_blank">¿Por qué vestir con ropa Vintage?</a>
+            <br>
+            <a class="submenu" href="https://espaivintage.com/blogs/news/las-5-chaquetas-vintage-mas-iconicas-de-la-historia-del-cine" target="_blank">Chaqutas icónicas en el cine</a>
+            <br>
+            <a class="submenu" href="https://somosvintage.com/ropa-vintage-cine/" target="_blank">Helen Uffner:tras la pista de la ropa Vintage en el cine</a>
+            <br>
+            <a class="submenu" href="https://medinamenswear.com/blogs/el-blog-de-los-qualitylovers/estilo-de-moda-vintage-clasicos-que-nunca-pasan-de-moda" target="_blank">Clásicos que no pasan de moda</a>
+            <br>
+            <a class="submenu" href="https://www.tiendaladycactus.com/blog/p29098-cine-vestuario-cruella-revolucion-moda.html" target="_blank">Cruella y la revolución de la moda</a>
+            <br>
+            <a class="submenu" href="https://gelolasvintage.blogspot.com/2015/05/el-estilo-de-los-anos-30-la-moda-y-el.html" target="_blank">El cine de los años 30 y la moda</a>
+            <br>
+        </article>
+        </div>
+    </section>
+    </main>
+    <footer class = "PiePagina">
+        <p>©Copyright 2024 - Retro Era Vintage Clothes - Todos los derechos reservados</p>
+        <div class = "Redes">
+            <img class="youtube" src="Imagenes/youtube.png">
+            <img class="tiktok" src="Imagenes/tik-tok.png">
+            <img class="instagram" src="Imagenes/instagram.png">
+            <img class="linkedin" src="Imagenes/linkedin.png">
+        </div>
+    </footer>
+</body>
+</html>

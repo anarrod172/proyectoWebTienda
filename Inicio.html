@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="Index-css.css">
+    <link rel="stylesheet" href="Esquema.css">
+    <link rel="stylesheet" href="Carrusel.css">
+    <script type="text/javascript" src="MenuDesplegable.js"></script>
+    <script type="text/javascript" src="SmoothScrolling.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Carrusel.js"></script>
+</head>
+<body>
+    <header id = "cabecera">
+        <img src="Imagenes/Logorosa.png" alt="Retro Era Vintage Clothes" height="150" width="230" id="headerImg"/>
+        <p>Viaja al pasado vistiendo vintage.</p>
+    </header>
+    <nav>
+        <ul id="MenuUl1">
+            <li class="MenuItem"><a class="MenuEnlace" href="Inicio.html" target="_self">Home</a></li>
+            <li class="MenuItem"><a class="MenuEnlace" href="Sobre_nosotros.html" target="_self">Sobre nosotros</a></li>
+        </ul>
+        <ul id="MenuUl2">
+            <li class="MenuItem" onclick="cambia(this)"><span class="MenuEnlace">Área cliente</span></li>
+            <ul id="SubMenuSmall" style="display: none">
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaMujer" href="Area_clientes.html">Ropa de Mujer</a></li>
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaHombre" href="Area_clientes.html">Ropa de Hombre</a></li>
+            </ul>
+            <li class="MenuItem"><a class="MenuEnlace" href="Inicio_sesion.html" target="_self">Inicio sesión</a></li>
+            <li class="MenuItem"><a class="MenuEnlace" href="Contacto.html" target="_self">Contacto</a></li>
+        </ul> 
+    </nav>
+    <nav id="menuHamburguesa" style="display: none">
+        <ul id="contenedorDesplegable1">
+            <li class="MenuRelleno"></li>
+            <li class="MenuRelleno"></li>   
+        </ul>
+        <ul id="contenedorDesplegable2">
+            <ul class="SubMenu" style="display: inline-block">
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaMujer" href="Area_clientes.html">Ropa de Mujer</a></li>
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaHombre" href="Area_clientes.html">Ropa de Hombre</a></li>
+            </ul>
+            <li class="MenuRelleno"></li>
+            <li class="MenuRelleno"></li>
+        </ul> 
+    </nav>
+    <main>
+        <section id="Carrusel">
+            <div class="gallery-container">
+                <figure class="gallery-item">
+                    <img src="Imagenes/TiendaDentro.webp" alt="Imagen 1">
+                    <figcaption>Figura 1: Interior de la tienda</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Imagenes/Letrero.jpg" alt="Imagen 2">
+                    <figcaption>Figura 2: Letrero luminoso</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Imagenes/RopaDentro.jpg" alt="Imagen 3">
+                    <figcaption>Figura 3: Algunos de nuestros productos.</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Imagenes/LetreroNeon.jpg" alt="Imagen 4">
+                    <figcaption>Figura 4: Planta de abajo.</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="Imagenes/Cliente.webp" alt="Imagen 5">
+                    <figcaption>Figura 5: Cliente mirando algunos de nuestros productos</figcaption>
+                </figure>
+            </div>
+            <nav class="gallery-navigation">
+                <button class="nav-button" id= "prev-button">Anterior</button>
+                <button class="nav-button" id= "next-button">Siguiente</button>
+            </nav>
+        </section>
+        <section>
+            <article class="cuadradosContainer">
+                <div class = "cuadrados">
+                    <img class= "Icono" src="Imagenes/camion (1).png">
+                    <div>
+                        <p class="tituloContainer">Envíos gratis a partir de 50€</p>
+                        <p >Envío gratuito a toda la Península para envíos de más de 50€. Además, disponemos de las mejores opciones para envíos internacionales.</p>
+                    </div>
+                </div>
+                <div class="cuadrados1">
+                    <img class= "Icono" src="Imagenes/pulgar-arriba.png">
+                    <div>
+                        <p class="tituloContainer">Selección de ropa Vintage</p>
+                        <p>Nos esforzamos en ofrecer la mejor calidad y al mejor precio. Cuidamos el detalle, midiendo prenda por prenda y revisando continuamente.</p>
+                    </div>
+                </div>
+                <div class="cuadrados2">
+                    <img class= "Icono" src="Imagenes/diamante.png">
+                    <div>
+                        <p class="tituloContainer">Diferentes opciones de pago</p>
+                        <p>Te ofrecemos las mejores pasarelas de pago, con toda la seguridad para que puedas realizar tus compras de manera sencilla</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article id="Bienvenida">
+                <p class="titulo">Bienvenidos a Retro Era <span>Vintage Clothes</span></p>
+                <p>Somos un pequeña tienda con ropa vintage situada en pleno corazón de Sevilla. Nos dedicados a la venta de prendas de segunda inspiradas en vestuario de cine de diferentes épocas.</p>
+                <button class=" button"> <a id="linkButton" target="_self" href="Sobre_nosotros.html">Quiero saber más</a></button>            
+            </article>
+        </section>
+        <section>
+            <article class="TextoDefinicion">
+                <p class="titulo">¿Estás buscando una tienda para<span> comprar ropa vintage y retro online?</span></p>
+                <p>¡Estamos aquí! Te hemos pillado buscando tesoros vintage, únicos y diferentes, ¡como tú! Porque si estás aquí es que pasas de la moda que nos imponen las grandes industrias. Vas a lo tuyo, tienes personalidad propia y poder de decisión sobre qué te pones hoy, mañana y cada día. Y sobre todo ¡¡¡¡no quieres que nadie te copie el look!!!!Tu elección es la moda vintage y nos gustas.Déjanos decirte que no podías haber aterrizado en un sitio mejor.</p>
+                <p>Déjanos decirte que no podías haber aterrizado en un sitio mejor.Estás en Retreo Era Vintage Clothes, una de las tiendas de referencia de ropa retro y vintage en Sevilla. Te invitamos a acercarte a nuestra tienda, aquí vas a encontrar todo lo que necesitas para tus looks de auténtico estilo vintage y retro. </p>
+                <div style="text-align: center;">
+                <iframe src="https://www.youtube.com/embed/trPUOwhJk6Y?si=GWcktHsRc_8gHI-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+                </div>
+            </article>
+        </section>
+        <section id="scrollUp">
+            <a href="#cabecera"><img id="flecha" src="Imagenes/flecha-hacia-arriba.png"></a>
+        </section>
+        <section id="MenuSecundario">
+            <div>
+                <article>
+                    <p class="Subrayado">Horario</p>
+                    <ul>
+                        <li><p>Lunes-Viernes</p>
+                            <ul>
+                                <li>Mañanas: 09:00-13:30</li>
+                                <li>Tardes: 17:00-20:00</li>
+                            </ul>
+                        </li>
+                        <li><p>Sábados</p>
+                            <ul>
+                                <li>Mañanas: 09:00-14:00</li>
+                            </ul>
+                        </li>
+                        <li><p>Domingos</p>
+                            <ul>
+                                <li>Cerrado todo el día</li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </article>
+                <article>
+                    <p class="Subrayado">Ubicación</p>
+                    <p>C/Laraña, 12, Sevilla, Andalucía, España</p>
+                    <p>Teléfono de contacto: 955472113-657449328</p>
+                    <a class="submenu" href="mailto:retroEra@gmail.com?Bcc=correocopiagmail.com&subject=Desarrollo%20Entorno%20Cliente&body=Estoy%20interesado%20en...">retroEra@gmail.com</a>
+                </article>
+            </div>
+            <div>
+            <article>
+                <p class="Subrayado">Área Cliente</p>
+                <a class="submenu" href="Area_clientes.html" target="_self">Ropa de Mujer</a>
+                <br>
+                <a class="submenu" href="Area_clientes.html" target="_self">Ropa de Hombre</a>
+            </article>
+            <article>
+                <p class="Subrayado">Páginas de interés</p>
+                <a class="submenu" href="https://fitinivintage.com/blog/moda-al-gusto-del-planeta-b11.html" target="_blank">Moda al gusto del planeta</a>
+                <br>
+                <a class="submenu" href="https://fitinivintage.com/blog/segunda-mano-vs-vintage-son-lo-mismo-b10.html" target="_blank">¿Es lo mismo la ropa de segunda mano que la vintage?</a>
+                <br>
+                <a class="submenu" href="https://vintagewholesalespain.com/blogs/vintagewholesalespain-blog/la-ropa-vintage" target="_blank">¿Por qué vestir con ropa Vintage?</a>
+                <br>
+                <a class="submenu" href="https://espaivintage.com/blogs/news/las-5-chaquetas-vintage-mas-iconicas-de-la-historia-del-cine" target="_blank">Chaqutas icónicas en el cine</a>
+                <br>
+                <a class="submenu" href="https://somosvintage.com/ropa-vintage-cine/" target="_blank">Helen Uffner:tras la pista de la ropa Vintage en el cine</a>
+                <br>
+                <a class="submenu" href="https://medinamenswear.com/blogs/el-blog-de-los-qualitylovers/estilo-de-moda-vintage-clasicos-que-nunca-pasan-de-moda" target="_blank">Clásicos que no pasan de moda</a>
+                <br>
+                <a class="submenu" href="https://www.tiendaladycactus.com/blog/p29098-cine-vestuario-cruella-revolucion-moda.html" target="_blank">Cruella y la revolución de la moda</a>
+                <br>
+                <a class="submenu" href="https://gelolasvintage.blogspot.com/2015/05/el-estilo-de-los-anos-30-la-moda-y-el.html" target="_blank">El cine de los años 30 y la moda</a>
+                <br>
+            </article>
+            </div>
+        </section>
+    </main>
+    <footer class = "PiePagina">
+        <p>©Copyright 2024 - Retro Era Vintage Clothes - Todos los derechos reservados</p>
+        <div class = "Redes">
+            <img class="youtube" src="Imagenes/youtube.png">
+            <img class="tiktok" src="Imagenes/tik-tok.png">
+            <img class="instagram" src="Imagenes/instagram.png">
+            <img class="linkedin" src="Imagenes/linkedin.png">
+        </div>
+    </footer>
+</body>
+</html>

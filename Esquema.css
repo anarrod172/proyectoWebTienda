@@ -1,0 +1,205 @@
+nav{
+    width: 100%;
+    display: flex;
+    gap: 1px;
+}
+#MenuUl1, #MenuUl2, #contenedorDesplegable1, #contenedorDesplegable2 {
+    list-style-position: none;
+    list-style-type: none;
+    font-family: sans-serif;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 1px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #e4e3a324;
+}
+#MenuUl1, #contenedorDesplegable1{
+    width: 40%;
+}
+#MenuUl2, #contenedorDesplegable2{
+    width: 60%;
+}
+.MenuRelleno {
+    list-style-type: none;
+    border-color: transparent;
+    background-color:transparent;
+    border-style: solid;
+    text-align: center;
+    width: 100%;
+    padding: 0px;  
+}
+.SubMenu{
+    list-style-position: none;
+    list-style-type: none;
+    text-align: center;
+    gap: 1px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%; 
+}
+.SubMenuItem{
+    list-style-type: none;
+    border-color: #72DBDB;
+    background-color:beige;
+    border-style: solid;
+    text-align: center;
+    color: #72DBDB;
+    width: 100%;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#SubMenuSmall{
+    list-style-position: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.MenuItem{
+    list-style-type: none;
+    border-color: #72DBDB;
+    background-color:beige;
+    border-style: solid;
+    text-align: center;
+    width: 100%;
+    padding: 20px;  
+}
+.MenuItem:hover, .SubMenuItem:hover{
+    background-color:#DB71AE;
+    color:whitesmoke;
+}
+.MenuEnlace{
+    flex: auto;
+    text-decoration:none;
+    color: #72DBDB;
+    padding: 20px;
+}
+.MenuEnlace:hover{
+    color:whitesmoke;
+}
+#MenuSecundario{
+    width: 100%;
+    border: solid 2px;
+    border-color: #72DBDB;
+    background-color: rgba(255, 255, 255, 0.419);
+    color:black;
+    display: flex;
+    justify-content: space-around;
+}
+#MenuSecundario>div{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+#MenuSecundario>div>article{
+    justify-content: space-between;
+}
+.Subrayado{
+    text-decoration: underline overline;
+    font-size: large;
+    color: #4ccccc;
+}
+li{
+    list-style: none;
+}
+.submenu:link, submenu:visited{
+    text-decoration:none;
+    color:black;
+}
+.submenu:visited{
+    color:black;
+}
+.submenu:active{
+    cursor:pointer;
+    text-decoration: underline;
+}
+.submenu{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#scrollUp{
+    text-align: end;
+}
+#flecha {
+    height: 60px;
+    height: 60px;
+    margin-right: 30px;
+}
+
+.PiePagina{
+    background-color: #DB71AE;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    color:whitesmoke;
+}
+.Icono{
+    height: 35px; 
+    width: 35px;
+    margin: 20px;
+    border-radius: 100%;
+    border-color: whitesmoke;
+    padding: 12px;
+    border-style: solid ;  
+}
+.Redes{
+    display: flex;
+    align-items: center;
+}
+.Redes>img{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    margin: 15px;
+}
+.youtube:hover{
+    background-color: rgb(244, 16, 16);
+    border-radius: 100%;
+}
+.tiktok:hover{
+    background-color: black;
+    border-radius: 100%;
+}
+.instagram:hover{
+    background-color: rgb(185, 67, 221);
+    border-radius: 100%;
+}
+.linkedin:hover{
+    background-color: rgb(31, 24, 242);
+    border-radius: 100%;
+}
+@media(max-width:1200px){
+    nav{
+        flex-direction: column;
+    }
+    
+    #MenuUl1, #MenuUl2, #contenedorDesplegable1, #contenedorDesplegable2{
+        width: 100%;
+    }
+    #MenuSecundario>div{
+        margin: 50px;
+        flex-direction: column;
+    }
+}
+@media(max-width:600px){
+    nav{
+        gap: 1px;
+    }
+    #MenuUl1, #MenuUl2, #contenedorDesplegable1, #contenedorDesplegable2{
+        flex-direction: column;
+    }
+    .PiePagina>p{
+        padding-top: 100px ;
+    }
+    .Redes{
+        flex-direction: column;
+    }
+    #MenuSecundario{
+        flex-direction: column;
+    }
+    #MenuSecundario>div{
+        margin-left: 20px;
+    }
+}

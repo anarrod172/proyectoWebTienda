@@ -1,0 +1,85 @@
+body{
+    background-image: url(Imagenes/Pared.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background-color: black;
+    color: #72DBDB;
+    text-align: end;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    padding: 50px;
+}
+span{
+ color: #72DBDB; 
+}
+.titulo{
+    font-size: xx-large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    padding: 10px;
+}
+.packs{
+    display: flex;
+    justify-content: space-evenly;
+    padding:30px;
+    flex-wrap: wrap;
+    gap:50px;
+}
+.pack{
+    border-color: #72DBDB;
+    border-style: solid;
+    border-radius: 5px;
+    padding:30px;
+    background-color:rgba(245, 245, 220, 0.837);
+    width: 350px;
+}
+.pack:hover{
+    -webkit-transform:scale(1.1);transform: scale(1.1);
+}
+.button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #DB71AE;
+}
+.button:hover{
+    animation-name: bounce;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: 3s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+ul.carrusel {
+    height: 300px; /*Modificar con responsive*/
+}
+ul.carrusel li img{
+    width: 100%;
+    height: 300px;
+    object-fit: scale-down;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    25%,
+    75% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+}

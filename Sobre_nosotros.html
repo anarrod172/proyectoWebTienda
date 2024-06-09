@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotros </title>
+    <link rel="stylesheet" href="SobreNosotros.css">
+    <link rel="stylesheet" href="Esquema.css">
+    <script type="text/javascript" src="MenuDesplegable.js"></script>
+    <script type="text/javascript" src="SmoothScrolling.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id = "cabecera">
+        <img src="Imagenes/Logorosa.png" alt="Retro Era Vintage Clothes" height="150" width="230" id="headerImg"/>
+        <p>Viaja al pasado vistiendo vintage.</p>
+    </header>
+    <nav>
+        <ul id="MenuUl1">
+            <li class="MenuItem"><a class="MenuEnlace" href="Inicio.html" target="_self">Home</a></li>
+            <li class="MenuItem"><a class="MenuEnlace" href="Sobre_nosotros.html" target="_self">Sobre nosotros</a></li>
+        </ul>
+        <ul id="MenuUl2">
+            <li class="MenuItem" onclick="cambia(this)"><span class="MenuEnlace">Área cliente</span></li>
+            <ul id="SubMenuSmall" style="display: none">
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaMujer" href="Area_clientes.html">Ropa de Mujer</a></li>
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaHombre" href="Area_clientes.html">Ropa de Hombre</a></li>
+            </ul>
+            <li class="MenuItem"><a class="MenuEnlace" href="Inicio_sesion.html" target="_self">Inicio sesión</a></li>
+            <li class="MenuItem"><a class="MenuEnlace" href="Contacto.html" target="_self">Contacto</a></li>
+        </ul> 
+    </nav>
+    <nav id="menuHamburguesa" style="display: none">
+        <ul id="contenedorDesplegable1">
+            <li class="MenuRelleno"></li>
+            <li class="MenuRelleno"></li>   
+        </ul>
+        <ul id="contenedorDesplegable2">
+            <ul class="SubMenu" style="display: inline-block">
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaMujer" href="Area_clientes.html">Ropa de Mujer</a></li>
+                <li class="SubMenuItem"><a class="MenuEnlace" id="enlaceRopaHombre" href="Area_clientes.html">Ropa de Hombre</a></li>
+            </ul>
+            <li class="MenuRelleno"></li>
+            <li class="MenuRelleno"></li>
+        </ul> 
+    </nav>
+    <main>
+        <section>
+            <article class="seccion1">
+                <h2>¿Cómo <span> empezamos?</span></h2>
+                <div class="seccionText">
+                    <p>Retro Era arranca en 2017, en Sevilla. Nace a raíz del amor verdadero por la moda de años pasados. Nuestro estilo de vida está ligado a esta pasión que sentimos por todo lo vintage, tanto es así que un día decidimos expandir todo lo que estuviera en nuestra mano este concepto de slow fashion, empezando por nuestra ciudad, Sevilla.</p>
+                    <p>Quisimos hacerlo de una manera especial y personal, por eso optamos por elegir una a una nuestras prendas, asegurándonos así la calidad, exclusividad y el buen estado de cada una de ellas. Disfrutamos de cada momento de elección, por muchas horas que esto nos dedique.</p>
+                </div>
+            </article> 
+            <article class="seccion2">
+                <img src="Imagenes/Entrada.jpg" width="50%">
+                <div id="textolado">
+                    <h2>¿Quiénes <span>somos?</span></h2>
+                    <p>Retro Era es una tienda atemporal, dirigida a un público variado en cuanto a estilo y rango de edad. Nos encanta la moda de los años 80s y 90s, pero no dejamos de lado las tendencias presentes en los años 60s y 70s. Es por eso que estamos seguros de que, si te gusta vestir diferente, si te gusta la moda y arriesgar con ella, aquí encontrarás un hueco para ti.</p>
+                </div>
+            </article> 
+            <article class="seccion3">
+                <div id="sect3">
+                    <h2>Nuestras <span>Prendas</span></h2>
+                    <p>Sumérgete en el encanto del pasado con nuestra exclusiva colección de ropa vintage inspirada en las décadas doradas del cine. En Retro Era, cada prenda cuenta una historia y te transporta a una época donde el estilo y el glamour eran los protagonistas.</p>
+                    <p>Revive el espíritu de los años 60 con vestidos de corte A, trajes sastre impecables y minifaldas que evocan la moda de las icónicas películas de Audrey Hepburn y los atrevidos looks de la generación Mod. Encuentra prendas que te harán sentir como una estrella de "Desayuno con diamantes" o una rebelde sin causa.</p>
+                    <p>La era del disco y el boho chic te esperan con pantalones acampanados, blusas de seda con estampados psicodélicos y vestidos bohemios dignos de una musa de Woodstock. Canaliza la energía de los musicales de la época o deslumbra con el brillo y la extravagancia de "Fiebre del sábado noche".</p>
+                    <p>Explora la explosión de color y la audacia de los años 80 con nuestras chaquetas de cuero, faldas de tul y camisetas gráficas que te harán sentir como una estrella de rock o un ícono de las comedias juveniles. Encuentra tu look perfecto para revivir la magia de películas como "El club de los cinco" o "Flashdance".</p>
+                    <p>Redescubre la moda de los 90 con nuestras camisas de franela, vestidos slip y jeans de cintura alta. Ya sea que quieras capturar la esencia del estilo grunge popularizado por bandas como Nirvana o la simplicidad chic de "Clueless", tenemos todo lo que necesitas para volver a vivir esos años dorados.</p>
+                </div>  
+            </article>
+            <article class="seccion4">
+                <div id="textoSeccion4">
+                    <h2>Responsabilidad y <span>consciencia</span></h2>
+                    <p>Intentamos recuperar prendas de cercanía, ya que una de nuestras máximas es la de dignificar nuestro residuo evitando así que prendas desechadas en Andalucía lleguen a África o cualquier otra parte del mundo rebajando el impacto medioambiental por mover grandes cantidades de mercancía en barcos así como respetando a los habitantes de aquellos países y sectores textiles que se degradan con el envío de ropa desechada por parte de Europa.</p>
+                    <p>En nuestro proceso de selección tenemos en cuenta las tendencias actuales, respetando uno de los mandamientos de la moda vintage: La originalidad, “que nadie copie tu look “. Rescatamos prendas fabricadas hace más de 20 años, que merecen una segunda oportunidad dentro del mercado actual fast fashion, en el que la durabilidad y calidad de las prendas brilla por su ausencia.</p>
+                </div>
+                <img src="Imagenes/Maniquí.jpg" width="50%">
+            </article> 
+        </section>
+        <section id="scrollUp">
+            <a href="#cabecera"><img id="flecha" src="Imagenes/flecha-hacia-arriba.png"></a>
+        </section>
+        <section id="MenuSecundario">
+            <div>
+                <article>
+                    <p class="Subrayado">Horario</p>
+                    <ul>
+                        <li><p>Lunes-Viernes</p>
+                            <ul>
+                                <li>Mañanas: 09:00-13:30</li>
+                                <li>Tardes: 17:00-20:00</li>
+                            </ul>
+                        </li>
+                        <li><p>Sábados</p>
+                            <ul>
+                                <li>Mañanas: 09:00-14:00</li>
+                            </ul>
+                        </li>
+                        <li><p>Domingos</p>
+                            <ul>
+                                <li>Cerrado todo el día</li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </article>
+                <article>
+                    <p class="Subrayado">Ubicación</p>
+                    <p>C/Laraña, 12, Sevilla, Andalucía, España</p>
+                    <p>Teléfono de contacto: 955472113-657449328</p>
+                    <a class="submenu" href="mailto:retroEra@gmail.com?Bcc=correocopiagmail.com&subject=Desarrollo%20Entorno%20Cliente&body=Estoy%20interesado%20en...">retroEra@gmail.com</a>
+                </article>
+            </div>
+            <div>
+            <article>
+                <p class="Subrayado">Área Cliente</p>
+                <a class="submenu" href="Area_clientes.html" target="_self">Ropa de Mujer</a>
+                <br>
+                <a class="submenu" href="Area_clientes.html" target="_self">Ropa de Hombre</a>
+            </article>
+            <article>
+                <p class="Subrayado">Páginas de interés</p>
+                <a class="submenu" href="https://fitinivintage.com/blog/moda-al-gusto-del-planeta-b11.html" target="_blank">Moda al gusto del planeta</a>
+                <br>
+                <a class="submenu" href="https://fitinivintage.com/blog/segunda-mano-vs-vintage-son-lo-mismo-b10.html" target="_blank">¿Es lo mismo la ropa de segunda mano que la vintage?</a>
+                <br>
+                <a class="submenu" href="https://vintagewholesalespain.com/blogs/vintagewholesalespain-blog/la-ropa-vintage" target="_blank">¿Por qué vestir con ropa Vintage?</a>
+                <br>
+                <a class="submenu" href="https://espaivintage.com/blogs/news/las-5-chaquetas-vintage-mas-iconicas-de-la-historia-del-cine" target="_blank">Chaqutas icónicas en el cine</a>
+                <br>
+                <a class="submenu" href="https://somosvintage.com/ropa-vintage-cine/" target="_blank">Helen Uffner:tras la pista de la ropa Vintage en el cine</a>
+                <br>
+                <a class="submenu" href="https://medinamenswear.com/blogs/el-blog-de-los-qualitylovers/estilo-de-moda-vintage-clasicos-que-nunca-pasan-de-moda" target="_blank">Clásicos que no pasan de moda</a>
+                <br>
+                <a class="submenu" href="https://www.tiendaladycactus.com/blog/p29098-cine-vestuario-cruella-revolucion-moda.html" target="_blank">Cruella y la revolución de la moda</a>
+                <br>
+                <a class="submenu" href="https://gelolasvintage.blogspot.com/2015/05/el-estilo-de-los-anos-30-la-moda-y-el.html" target="_blank">El cine de los años 30 y la moda</a>
+                <br>
+            </article>
+            </div>
+        </section>
+    </main>
+    <footer class = "PiePagina">
+        <p>©Copyright 2024 - Retro Era Vintage Clothes - Todos los derechos reservados</p>
+        <div class = "Redes">
+            <img class="youtube" src="Imagenes/youtube.png">
+            <img class="tiktok" src="Imagenes/tik-tok.png">
+            <img class="instagram" src="Imagenes/instagram.png">
+            <img class="linkedin" src="Imagenes/linkedin.png">
+        </div>
+    </footer>
+</body>
+</html>
